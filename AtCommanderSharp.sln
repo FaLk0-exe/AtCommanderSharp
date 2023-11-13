@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtCommanderSharp", "AtCommanderSharp\AtCommanderSharp.csproj", "{452FC129-139D-4325-8167-2B2BAC8CE489}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtCommanderSharp.Demonstration", "AtCommanderSharp.Demonstration\AtCommanderSharp.Demonstration.csproj", "{EF39C0B8-CE07-4552-ACE5-C79E42269C42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtCommanderSharp.Tests", "AtCommanderSharp.Tests\AtCommanderSharp.Tests.csproj", "{A19EE96F-EC5C-43E8-9930-9C78BB56FEB4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{452FC129-139D-4325-8167-2B2BAC8CE489}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{452FC129-139D-4325-8167-2B2BAC8CE489}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{452FC129-139D-4325-8167-2B2BAC8CE489}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{452FC129-139D-4325-8167-2B2BAC8CE489}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF39C0B8-CE07-4552-ACE5-C79E42269C42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF39C0B8-CE07-4552-ACE5-C79E42269C42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF39C0B8-CE07-4552-ACE5-C79E42269C42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF39C0B8-CE07-4552-ACE5-C79E42269C42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A19EE96F-EC5C-43E8-9930-9C78BB56FEB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A19EE96F-EC5C-43E8-9930-9C78BB56FEB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A19EE96F-EC5C-43E8-9930-9C78BB56FEB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A19EE96F-EC5C-43E8-9930-9C78BB56FEB4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

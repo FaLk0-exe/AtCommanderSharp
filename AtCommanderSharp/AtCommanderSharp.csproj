@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Data\**" />
+      <Compile Remove="src\Data\Models\AtScheduledTask.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Data\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Data\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="src\Attributes\" />
+      <Folder Include="src\Configurations\" />
+      <Folder Include="src\Data\Models\" />
+      <Folder Include="src\Data\Repositories\" />
+      <Folder Include="src\Events\" />
+      <Folder Include="src\Helpers\" />
+      <Folder Include="src\Infrastructure\" />
+      <Folder Include="src\Interfaces\" />
+      <Folder Include="src\Resources\" />
+      <Folder Include="src\Services\" />
+    </ItemGroup>
+
+</Project>
