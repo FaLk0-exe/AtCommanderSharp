@@ -32,7 +32,6 @@
       <Folder Include="src\Data\Repositories\" />
       <Folder Include="src\Events\" />
       <Folder Include="src\Helpers\" />
-      <Folder Include="src\Interfaces\" />
       <Folder Include="src\Resources\" />
       <Folder Include="src\Services\" />
     </ItemGroup>
