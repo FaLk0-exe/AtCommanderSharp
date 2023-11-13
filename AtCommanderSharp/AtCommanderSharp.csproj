@@ -22,7 +22,6 @@
     <ItemGroup>
       <Folder Include="src\Attributes\" />
       <Folder Include="src\Configurations\" />
-      <Folder Include="src\Data\Models\" />
       <Folder Include="src\Data\Repositories\" />
       <Folder Include="src\Events\" />
       <Folder Include="src\Helpers\" />
