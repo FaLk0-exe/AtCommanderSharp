@@ -9,14 +9,17 @@
     <ItemGroup>
       <Compile Remove="Data\**" />
       <Compile Remove="src\Data\Models\AtScheduledTask.cs" />
+      <Compile Remove="src\Validators\AtScheduledTaskValidator\**" />
     </ItemGroup>
 
     <ItemGroup>
       <EmbeddedResource Remove="Data\**" />
+      <EmbeddedResource Remove="src\Validators\AtScheduledTaskValidator\**" />
     </ItemGroup>
 
     <ItemGroup>
       <None Remove="Data\**" />
+      <None Remove="src\Validators\AtScheduledTaskValidator\**" />
     </ItemGroup>
 
     <ItemGroup>
@@ -25,10 +28,13 @@
       <Folder Include="src\Data\Repositories\" />
       <Folder Include="src\Events\" />
       <Folder Include="src\Helpers\" />
-      <Folder Include="src\Infrastructure\" />
       <Folder Include="src\Interfaces\" />
       <Folder Include="src\Resources\" />
       <Folder Include="src\Services\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FluentValidation" Version="11.8.0" />
     </ItemGroup>
 
 </Project>
