@@ -1,11 +1,11 @@
 ﻿namespace AtCommanderSharp.Data.Models.Tasks;
 
-public class AtScheduledTaskData
+public class ScheduledTaskData
 {
     public string Command { get; private set; }
     public DateTime ExecutionDate { get; private set; }
 
-    public AtScheduledTaskData(string command, DateTime executionDate)
+    public ScheduledTaskData(string command, DateTime executionDate)
     {
         Command = command;
         ExecutionDate = executionDate;

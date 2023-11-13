@@ -4,5 +4,5 @@ using AtCommanderSharp.Data.Models.Tasks;
 using AtCommanderSharp.Validators;
 using FluentValidation;
 
-var task = new AtScheduledTaskData(null,DateTime.Now);
-new AtScheduledTaskDataValidator().ValidateAndThrow(task);
+var task = new ScheduledTaskData(null,DateTime.Now);
+new ScheduledTaskDataValidator().ValidateAndThrow(task);

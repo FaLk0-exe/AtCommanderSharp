@@ -10,21 +10,25 @@
       <Compile Remove="Data\**" />
       <Compile Remove="src\Data\Models\AtScheduledTask.cs" />
       <Compile Remove="src\Validators\AtScheduledTaskValidator\**" />
+      <Compile Remove="Patterns\**" />
     </ItemGroup>
 
     <ItemGroup>
       <EmbeddedResource Remove="Data\**" />
       <EmbeddedResource Remove="src\Validators\AtScheduledTaskValidator\**" />
+      <EmbeddedResource Remove="Patterns\**" />
     </ItemGroup>
 
     <ItemGroup>
       <None Remove="Data\**" />
       <None Remove="src\Validators\AtScheduledTaskValidator\**" />
+      <None Remove="Patterns\**" />
     </ItemGroup>
 
     <ItemGroup>
       <Folder Include="src\Attributes\" />
       <Folder Include="src\Configurations\" />
+      <Folder Include="src\Data\Constants\" />
       <Folder Include="src\Data\Repositories\" />
       <Folder Include="src\Events\" />
       <Folder Include="src\Helpers\" />

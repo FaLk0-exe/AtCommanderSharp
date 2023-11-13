@@ -4,9 +4,9 @@ using FluentValidation;
 
 namespace AtCommanderSharp.Validators;
 
-public class AtScheduledTaskDataValidator : AbstractValidator<AtScheduledTaskData>
+public class ScheduledTaskDataValidator : AbstractValidator<ScheduledTaskData>
 {
-    public AtScheduledTaskDataValidator()
+    public ScheduledTaskDataValidator()
     {
         RuleFor(task => task.Command)
             .NotEmpty()
