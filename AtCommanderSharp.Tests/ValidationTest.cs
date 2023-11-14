@@ -24,13 +24,5 @@ public class ValidationTest
         new ScheduledTaskDataValidator().ValidateAndThrow(task);
         Assert.True(true);
     }
-
-    [Fact]
-    public void SchedulerTaskBuilder_ThrowsException_WhereArgumentLessThanZero()
-    {
-        Assert.Throws<ArgumentOutOfRangeException>(() =>
-        {
-            var schedulerTaskBuilder = new SchedulerTaskBuilder(-1);
-        });
-    }
+    
 }

@@ -33,11 +33,11 @@
       <Folder Include="src\Events\" />
       <Folder Include="src\Helpers\" />
       <Folder Include="src\Resources\" />
-      <Folder Include="src\Services\" />
     </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="FluentValidation" Version="11.8.0" />
+      <PackageReference Include="SSH.NET" Version="2023.0.0" />
     </ItemGroup>
 
 </Project>
