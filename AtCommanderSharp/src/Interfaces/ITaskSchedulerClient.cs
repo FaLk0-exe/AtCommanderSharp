@@ -5,11 +5,10 @@ namespace AtCommanderSharp.Interfaces;
 
 public interface ITaskSchedulerClient
 {
-    Task CreateTaskAsync(SchedulerTaskBuilder schedulerTaskBuilder, CancellationToken cancellationToken);
+    Task CreateTaskAsync(ISchedulerTaskBuilder schedulerTaskBuilder);
 
-    Task CreateTaskAsync(IEnumerable<ScheduledTaskData> scheduledTasks,
-        CancellationToken cancellationToken);
+    Task CreateTaskAsync(IEnumerable<ScheduledTaskData> scheduledTasks);
 
-    Task CreateTaskAsync(ScheduledTaskData scheduledTaskData, CancellationToken cancellationToken);
-    Task CreateTaskAsync(CancellationToken cancellationToken, params ScheduledTaskData[] scheduledTaskDatas);
+    Task CreateTaskAsync(ScheduledTaskData scheduledTaskData);
+    Task CreateTaskAsync(params ScheduledTaskData[] scheduledTaskDatas);
 }

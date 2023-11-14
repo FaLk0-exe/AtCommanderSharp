@@ -14,29 +14,28 @@ public class TaskSchedulerClient : ITaskSchedulerClient
         _sshClient = sshClient;
     }
 
-    public async Task CreateTaskAsync(SchedulerTaskBuilder schedulerTaskBuilder, CancellationToken cancellationToken)
+    public async Task CreateTaskAsync(ISchedulerTaskBuilder schedulerTaskBuilder)
     {
         throw new NotImplementedException();
     }
     
-    public async Task CreateTaskAsync(IEnumerable<ScheduledTaskData> scheduledTasks,
-        CancellationToken cancellationToken)
+    public async Task CreateTaskAsync(IEnumerable<ScheduledTaskData> scheduledTasks)
     {
         var schedulerTaskBuilder = new SchedulerTaskBuilder();
         
         foreach (var scheduledTaskData in scheduledTasks)
             schedulerTaskBuilder.AddCommand(scheduledTaskData);
 
-        await CreateTaskAsync(schedulerTaskBuilder, cancellationToken);
+        await CreateTaskAsync(schedulerTaskBuilder);
     }
 
-    public async Task CreateTaskAsync(ScheduledTaskData scheduledTaskData, CancellationToken cancellationToken)
+    public async Task CreateTaskAsync(ScheduledTaskData scheduledTaskData)
     {
-        await CreateTaskAsync(Enumerable.Repeat(scheduledTaskData, 1), cancellationToken);
+        await CreateTaskAsync(Enumerable.Repeat(scheduledTaskData, 1));
     }
 
-    public async Task CreateTaskAsync(CancellationToken cancellationToken, params ScheduledTaskData[] scheduledTaskDatas)
+    public async Task CreateTaskAsync(params ScheduledTaskData[] scheduledTaskDatas)
     {
-        await CreateTaskAsync(scheduledTaskDatas, cancellationToken);
+        await CreateTaskAsync(scheduledTaskDatas);
     }
 }
